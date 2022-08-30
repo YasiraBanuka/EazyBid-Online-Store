@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="shortcut icon" type="image/icon" href="images/title_icon.png"/>
+
+        <link rel="stylesheet" href="css/main-style.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="header">
+           <div class="img"> <a href="index.html"><img src="images/logo-1.png" width="250px" height="auto" ></a></div>
+           <div><h1>EAZYBID ONLINE STORE</h1></div>
+           <div class="loging"> <img src="images/user.png" width="50px" height="auto" >
+                <button><a href="html/sign_up.html">SIGN UP</a></button>
+                <button><a href="html/sign_in.html">SIGN IN</a></button>
+            </div>
+        </div>
+        <section class="nav">
+            <div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="html/about_us.html">ABOUT</a></li>
+                    <li><a href="html/how_to.html">SUPPORT</a></li>
+                    <li><a href="html/about_us.html">CONTACT US</a></li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="header-image">
+                        <h1>YOUR TRUSTED SHOPPING PARTNER</h1>
+        </section>
+        <section class="category">
+            <h1>CATEGORIES</h1>
+            <div>
+            
+                <div class="category__on__home">
+                <div class="categoty_categories"><a href="html/category_electronics.html"><img src="images/electronics.jpg" alt="item category" width="100%"></a><a href="html/category_electronics.html" class="category__link"><h3>Electronics</h3></a></div>
+                <div class="categoty_categories"><a href="html/category_laptop_pc.html"><img src="images/laptop.jpg" alt="item category" width="100%"></a><a href="html/category_laptop_pc.html" class="category__link"><h3>Laptop & PC</h3></a></div>
+                <div class="categoty_categories"><a href="html/category_mobiles.html"><img src="images/mobiles.jpg" alt="item category" width="100%"></a><a href="html/category_mobiles.html" class="category__link"><h3>Mobile Phones</h3></a></div> 
+                <div class="categoty_categories"><a href="html/category_sportItems.html"><img src="images/sport_items.jpg" alt="item category" width="100%"></a><a href="html/category_sportItems.html" class="category__link"><h3>Sport Items</h3></a></div>
+                <div class="categoty_categories"><a href="html/category_automobiles.html"><img src="images/automobile.jpg" alt="item category" width="100%"></a><a href="html/category_automobiles.html" class="category__link"><h3>Automobiles</h3></a></div>
+                    
+            </div>            
+            </section>
+
+            <div class="slideshow">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/3.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                
+            <section class="category">
+                <h1>NEW ARRIVALS</h1>
+                <div>
+                
+                    <div class="category__on__home">
+                    <div class="categoty_categories"><a href="#"><img src="images/laptop_1.jpg" alt="item category" width="100%"></a><a href="#" class="category__link"><h3>Huawei Matebook Pro Laptop<br/>LKR 224,000</h3></a></div>
+                    <div class="categoty_categories"><a href="#"><img src="images/mobile_1.jpg" alt="item category" width="100%"></a><a href="#" class="category__link"><h3>Samsung Galaxy S22 Plus<br/>LKR 198,000</h3></a></div>
+                    <div class="categoty_categories"><a href="#"><img src="images/elec_4.jpg" alt="item category" width="100%"></a><a href="#" class="category__link"><h3>Samsung 32" smart LED TV<br/>LKR 42,000</h3></a></div> 
+   
+                </div>
+            </section>
+            
+            <footer class="web_footer">
+                <div class="row_container">
+                    <div class="row_topic">
+                        <div class="footer_topics">
+                            <h4>ABOUT</h4>
+                            <ul>
+                                <li><a href="html/about_us.html">About us</a></li>
+                                <li><a href="html/history.html">Our History</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer_topics">
+                            <h4>SUPPORT</h4>
+                            <ul>
+                                <li><a href="html/how_to.html">How to Bid</a></li>
+                                
+                                <li><a href="html/user_agreement.html">User Agreement</a></li>
+                                <br/><br/>
+                            </ul>
+                        </div>
+                        <div class="footer_topics">
+                            <h4>CONTACT US</h4>
+                            <ul>
+                                <li><a href="html/contact.html">Contact</a></li>
+                                <li><a href="html/find_us.html">Find us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_topics">
+                            <h4>FOLLOW US</h4>
+                            <div class="socialMedia_links">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://lk.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="logo_in_footer">
+                                <a href="index.html"><img src="images/logo-1.png" width="250px" hight="auto" align="center" alt="Logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="copy_right"><p>Copyright @ 2022 EazyBid Online Store | Group MLB_10.1_07</p></div>
+                </div>
+           </footer>
+        </body>
+        
+    </html>
+    </body>
+</html>
